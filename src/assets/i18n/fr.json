@@ -1,0 +1,35 @@
+{
+    "demo": {
+        "title": "Demo de translation",
+        "text": "This is a simple demonstration app for ngx-translate"
+    },
+    "modal": {
+      "titleSignUp" : "Nouveau  compte",
+      "titleSignIn" : "Connexion"
+    },
+    "language": {
+      "languageFlag": "France"
+    },
+    "bookList" : {
+      "searchResult": "Resultat de recherche",
+      "books": "livres",
+      "noDataFound": "Pas de données"
+    },
+    "cartShopping": {
+      "cart": "Panier",
+      "total": "Totale"
+    },
+    "saleSection": {
+      "addToCart": "Ajouter au panier",
+      "removeFromCart": "Retirer de panier"
+    },
+    "shopping": {
+      "totalArticl": "Totale articles",
+      "refundByPurchase": "de remboursement par",
+      "purchase": "d'achat",
+      "pay": "payer",
+      "discount": "Réduction",
+      "deduction": "Deduction",
+      "detailOffre":"detail de l'offre"
+    }
+}

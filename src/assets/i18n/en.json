@@ -1,0 +1,35 @@
+{
+    "demo": {
+        "title": "Translation demo",
+        "text": "This is a simple demonstration app for ngx-translate"
+    },
+    "modal": {
+      "titleSignUp" : "New Account",
+      "titleSignIn" : "Login"
+    },
+    "language": {
+      "languageFlag": "United-Kingdom"
+    },
+    "bookList" : {
+      "searchResult": "Search result",
+      "books": "books",
+      "noDataFound": "No data found"
+    },
+    "cartShopping": {
+      "cart": "Cart",
+      "total": "Total"
+    },
+    "saleSection": {
+      "addToCart": "Add to cart",
+      "removeFromCart": "Remove from cart"
+    },
+    "shopping": {
+      "totalArticl": "Total items",
+      "refundByPurchase": "refund by",
+      "purchase": "purchase",
+      "pay": "pay",
+      "discount": "Discount",
+      "deduction": "Deduction",
+      "detailOffre":"detail offer"
+    }
+}
