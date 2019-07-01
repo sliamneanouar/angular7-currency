@@ -1,0 +1,19 @@
+<div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+  <button class="languageButton" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">
+  <img *ngIf="true" src="../../../assets/images/flag-of-{{'language.languageFlag' | translate}}.png"
+    class="inLineBlock" style="margin-top: -5px;" width="30" height="20">
+    {{languageName}}
+</button>
+  <div class="drapDownList" ngbDropdownMenu aria-labelledby="dropdownManual">
+    <button class="dropdown-item" (click)="updateLanguage('en')">
+      <img *ngIf="true" src="../../../assets/images/flag-of-United-Kingdom.png"
+        class="rounded-circle" class="inLineBlock" width="20" height="12">
+      EN
+    </button>
+    <button class="dropdown-item" (click)="updateLanguage('fr')">
+      <img *ngIf="true" src="../../../assets/images/flag-of-France.png"
+      class="rounded-circle" class="inLineBlock" width="20" height="12">
+      FR
+    </button>
+
+  </div>

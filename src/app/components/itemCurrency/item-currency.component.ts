@@ -12,7 +12,7 @@ export class ItemCurrencyComponent implements OnInit {
   @Input()
   public set itemCurrency(value: any) {
     this._itemCurrency = value;
-    console.log("this._itemCurrency :::: ", this._itemCurrency);
+    //console.log("this._itemCurrency :::: ", this._itemCurrency);
   }
 
   public get itemCurrency(): any {

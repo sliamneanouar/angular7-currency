@@ -1,0 +1,16 @@
+<div class="input-group" *ngIf="router.url === '/'">
+  <input type="text" class="form-control inputSearch" [(ngModel)]="_searchValue"
+   (input)="updateSearchValue($event.target.value)"
+  placeholder="Country" style="">
+  <div class="input-group-btn iconSearch">
+    <button class="btn btn-default buttonSearch">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+  </div>
+</div>
+
+<app-list-currency
+  [listCurrency]="_listCurrencyForPagination"
+  [updatePaginationCallback]="updatePaginationCallback.bind(this)"
+  [length]="_listCurrency.length">
+</app-list-currency>

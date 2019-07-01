@@ -10,14 +10,20 @@ import {MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatL
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatPaginatorModule} from '@angular/material'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { MainComponent } from './pages/main.component';
 import { ListCurrencyComponent } from './components/ListCurrency/list-currency.component';
 import { ItemCurrencyComponent } from './components/itemCurrency/item-currency.component';
 import { FalgCurrencyComponent } from './components/flagCurrency/falg-currency.component';
-
+import { ListCurencyComponent } from './pages/list-curency/list-curency.component';
+import { DetailCurrencyComponent } from './pages/detail-currency/detail-currency.component';
+import { LanguageComponent } from './components/language/language.component';
 
 const appRoutes: Routes = [
+    {path: 'currency/:id', component: DetailCurrencyComponent},
+    {path: '', component: ListCurencyComponent}
 ];
 
 @NgModule({
@@ -25,11 +31,18 @@ const appRoutes: Routes = [
     MainComponent,
     ListCurrencyComponent,
     ItemCurrencyComponent,
-    FalgCurrencyComponent
+    FalgCurrencyComponent,
+    ListCurencyComponent,
+    DetailCurrencyComponent,
+    LanguageComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
+    BrowserAnimationsModule,
+    MatPaginatorModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     MatToolbarModule,
     MatButtonModule,
