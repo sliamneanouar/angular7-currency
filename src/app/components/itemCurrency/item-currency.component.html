@@ -1,13 +1,11 @@
 
-  <table class="table" style="border: 1px solid #80808021 !important
-  ;">
+  <table class="table tableItem">
     <tbody>
       <tr>
-        <td><img src="{{_itemCurrency.flag}}" class="rounded" alt="Cinque Terre" width="30" height="20"></td>
-        <td><b>{{_itemCurrency.currencies[0].symbol}}</b></td>
-        <td>{{_itemCurrency.currencies[0].code}}</td>
-        <td><i class="fas fa-camera"></i></td>
-        <td><mat-icon>chevron_right</mat-icon></td>
+        <td><img src="{{_itemCurrency.flag}}" class="rounded flagClass" alt="Cinque Terre" width="25" height="15"></td>
+        <td><b> {{_itemCurrency.currencies.symbol}}</b></td>
+        <td>{{_itemCurrency.currencies.code}}</td>
+        <td><mat-icon class="matIcon">chevron_right</mat-icon></td>
       </tr>
     </tbody>
   </table>

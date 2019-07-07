@@ -1,3 +1,32 @@
-<p>
-  detail-currency works!
-</p>
+<div class="container">
+  <div class="col-sm-12">
+    <div class="row">
+    <div class="col-sm-4">
+      <h3>{{_currencyDataDetail.name}}</h3>
+      <div class="flagClass"><img src="{{_currencyDataDetail.flag}}" class="rounded-Thumbnail" alt="Cinque Terre" width="80%" height="50%"></div><br>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-4">
+      <h2>{{'currency.name' | translate}}</h2>
+      <div *ngIf="_currencyDataDetail.currencies !== undefined">{{'currency.code' | translate}} : {{_currencyDataDetail.currencies[0].code}}</div>
+      <div *ngIf="_currencyDataDetail.currencies !== undefined">{{'currency.name' | translate}} : {{_currencyDataDetail.currencies[0].name}}</div>
+      <div>Code N° : {{_currencyDataDetail.numericCode}}</div>
+      <div>Code Iso Alpha 3 : {{_currencyDataDetail.alpha3Code}}</div>
+    </div>
+    <div class="col-sm-4">
+      <h2>{{'country.name' | translate}}</h2>
+      <div *ngIf="_currencyDataDetail.languages !== undefined">Language : {{_currencyDataDetail.languages[0].name}}</div>
+      <div>Region : {{_currencyDataDetail.region}}</div>
+      <div *ngIf="_currencyDataDetail.timezones !== undefined">Timezones : {{_currencyDataDetail.timezones[0]}}</div>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm-12">
+    <app-graph-line *ngIf="_arrayDataChart !== undefined && _arrayDataChart !== null"
+      [chartOptionCallback]="_arrayDataChart">
+    </app-graph-line>
+  </div>
+</div>

@@ -1,16 +1,42 @@
-<div class="input-group" *ngIf="router.url === '/'">
-  <input type="text" class="form-control inputSearch" [(ngModel)]="_searchValue"
-   (input)="updateSearchValue($event.target.value)"
-  placeholder="Country" style="">
-  <div class="input-group-btn iconSearch">
-    <button class="btn btn-default buttonSearch">
-      <i class="fa fa-search" aria-hidden="true"></i>
-    </button>
+
+<div class="input-group row" *ngIf="router.url === '/'">
+  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 elementsAvaible">
+    <b> {{_listCurrency.length}} - </b>{{'currency.avaibleCurrency' | translate}}
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+    <span class="paddingRight">{{'filter.filter' | translate}}</span>
+    <mat-form-field class="example-full-width">
+      <input matInput type="text" [(ngModel)]="_searchValue"
+       (input)="updateSearchValue($event.target.value)"
+      placeholder="{{'country.name' | translate}}">
+  </mat-form-field>
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+    <span class="paddingRight">{{'filter.order' | translate}}</span>
+    <mat-form-field>
+      <select matNativeControl required (change)="updateFilter($event.target.value)">
+        <option value="code">{{'currency.code' | translate}}</option>code
+        <option value="name">{{'currency.name' | translate}}</option>currency
+        <option value="country">{{'country.name' | translate}}</option>
+      </select>
+    </mat-form-field>
   </div>
 </div>
-
+<br>
+<div *ngIf="_listCurrency.length > 0">
 <app-list-currency
   [listCurrency]="_listCurrencyForPagination"
   [updatePaginationCallback]="updatePaginationCallback.bind(this)"
   [length]="_listCurrency.length">
 </app-list-currency>
+</div>
+
+<div *ngIf="_listCurrency.length === 0">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <h1 class="text-center">
+          <i class="material-icons size48">warning</i>
+          <br> {{'currency.noDataFound' | translate}}
+        </h1>
+    </div>
+</div>

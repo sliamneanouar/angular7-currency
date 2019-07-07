@@ -1,35 +1,27 @@
 {
-    "demo": {
-        "title": "Translation demo",
-        "text": "This is a simple demonstration app for ngx-translate"
-    },
-    "modal": {
-      "titleSignUp" : "New Account",
-      "titleSignIn" : "Login"
-    },
-    "language": {
-      "languageFlag": "United-Kingdom"
-    },
-    "bookList" : {
-      "searchResult": "Search result",
-      "books": "books",
-      "noDataFound": "No data found"
-    },
-    "cartShopping": {
-      "cart": "Cart",
-      "total": "Total"
-    },
-    "saleSection": {
-      "addToCart": "Add to cart",
-      "removeFromCart": "Remove from cart"
-    },
-    "shopping": {
-      "totalArticl": "Total items",
-      "refundByPurchase": "refund by",
-      "purchase": "purchase",
-      "pay": "pay",
-      "discount": "Discount",
-      "deduction": "Deduction",
-      "detailOffre":"detail offer"
-    }
+  "currency": {
+    "code" : "code",
+    "nationalSymbol": "National Symbol",
+    "name": "Currency",
+    "avaibleCurrency": "Avaible currency",
+    "noDataFound": "No data found",
+    "avrg": "Daily Average"
+  },
+  "country": {
+    "name" : "Country"
+  },
+  "language": {
+    "languageFlag": "United-Kingdom"
+  },
+  "paginator" : {
+    "firstPageLabel": "First page",
+    "itemsPerPageLabel": "Items per page",
+    "lastPageLabel": "Last page",
+    "nextPageLabel": "Next page",
+    "previousPageLabel": "Previous page"
+  },
+  "filter": {
+    "filter": "Filter",
+    "order": "Filter by"
+  }
 }

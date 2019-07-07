@@ -19,7 +19,7 @@ describe('ListCurencyComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create 9999999', () => {
     expect(component).toBeTruthy();
   });
 });
