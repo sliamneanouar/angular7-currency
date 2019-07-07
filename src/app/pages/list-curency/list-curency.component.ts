@@ -55,12 +55,8 @@ export class ListCurencyComponent implements OnInit {
     }
   }
 
-  public updateFilter(filterSelected): void {
-    this._listCurrency.sort((a,b) => {
-      if(a.currencies[filterSelected]) {
-      a.currencies[filterSelected].localeCompare(b.currencies['code']);
-      }
-    });
+  public updateFilter(filterSelected): any {
+    this._listCurrency.sort((from,to) => from.currencies[filterSelected].localeCompare(to.currencies['code']));
   }
 
 }
