@@ -33,7 +33,7 @@
     "highcharts": "^7.1.2",
     "highcharts-angular": "^2.4.0",
     "install": "^0.13.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "npm": "^6.10.0",
     "rxjs": "^6.5.2",
     "rxjs-compat": "^6.5.2",
